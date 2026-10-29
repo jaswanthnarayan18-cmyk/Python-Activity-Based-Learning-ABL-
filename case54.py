@@ -1,17 +1,17 @@
 
 
-# 54. Multi-Branch Expense Matrix Analysis
+ 54. Multi-Branch Expense Matrix Analysis
 
-## Aim
+AIM:
 To analyse monthly expenses of multiple branches and categories using nested lists, calculate totals and averages, and identify the largest contributors.
 
-## Objectives
+OBJECTIVES:
 - Store branch-wise and category-wise expenses.
 - Calculate monthly and branch totals.
 - Calculate average expenses.
 - Identify the branch or category with the highest expenditure.
 
-## Algorithm
+ALGORITHM:
 1. Store expenses in a nested list.
 2. Calculate the total expense of each branch.
 3. Calculate the average expense.
@@ -19,7 +19,7 @@ To analyse monthly expenses of multiple branches and categories using nested lis
 5. Find the largest contributor.
 6. Display the results.
 
-## Pseudocode
+PSEUDO CODE:
 ```text
 START
 INPUT expense matrix
@@ -37,7 +37,7 @@ DISPLAY results
 STOP
 ```
 
-## Source Code
+SOURCE CODE:
 ```python
 expenses = [
     [12000, 15000, 10000, 8000],
