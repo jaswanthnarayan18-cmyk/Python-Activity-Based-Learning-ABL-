@@ -1,15 +1,15 @@
-# 52. Hackathon Team Formation and Ranking
+52. Hackathon Team Formation and Ranking
 
-## Aim
+ Aim
 To analyse student scores and team compositions, validate team sizes, calculate aggregate round-wise scores, and resolve tied rankings using predefined rules.
 
-## Objectives
+ OBJECTIVES:
 - Validate whether teams contain the required number of members.
 - Calculate total scores of teams across multiple rounds.
 - Rank teams according to their total scores.
 - Resolve ties using the highest individual score as a secondary criterion.
 
-## Algorithm
+ALGORITHM:
 1. Store team names, members, and round-wise scores.
 2. Validate the size of every team.
 3. Calculate the total score of each team.
@@ -18,7 +18,7 @@ To analyse student scores and team compositions, validate team sizes, calculate 
 6. If totals are equal, use the highest individual score as the tie-breaker.
 7. Display the final ranking.
 
-## Pseudocode
+PSEUDO CODE:
 ```text
 START
 INPUT teams
@@ -35,7 +35,7 @@ DISPLAY ranking
 STOP
 ```
 
-## Source Code
+SOURCE CODE:
 ```python
 teams = [
     {"name": "Team Alpha", "members": 3, "rounds": [85, 90, 88],
