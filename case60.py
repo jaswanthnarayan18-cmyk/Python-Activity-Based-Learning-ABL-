@@ -1,24 +1,24 @@
 
 
-# 60. Manufacturing Quality Control Matrix
+ 60. Manufacturing Quality Control Matrix
 
-## Aim
+AIM:
 To analyse production quantities and defective units across products and batches, calculate defect percentages, and identify batches exceeding quality thresholds.
 
-## Objectives
+OBJECTIVES:
 - Store production and defect information in a matrix.
 - Calculate defect percentages.
 - Compare defect percentages with the quality threshold.
 - Identify products or batches requiring attention.
 
-## Algorithm
+ALGORITHM:
 1. Store production and defective quantities.
 2. Calculate defect percentage for every batch.
 3. Compare the percentage with the specified threshold.
 4. Mark batches exceeding the threshold.
 5. Display the quality report.
 
-## Pseudocode
+PSEUDO CODE:
 ```text
 START
 INPUT production matrix
@@ -41,7 +41,7 @@ DISPLAY quality report
 STOP
 ```
 
-## Source Code
+SOURCE CODE:
 ```python
 products = ["Product A", "Product B", "Product C"]
 
