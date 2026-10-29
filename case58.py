@@ -43,6 +43,22 @@ DISPLAY total fine
 STOP
 ```
 
+flowchart TD;(mermaid)
+    A([Start]) --> B[/Input borrowing records/]
+    B --> C[Set permitted days and daily fine]
+    C --> D{More records?}
+    D -- Yes --> E[Calculate overdue days]
+    E --> F[Calculate fine]
+    F --> G{Overdue?}
+    G -- Yes --> H[Mark book overdue]
+    G -- No --> I[Mark book on time]
+    H --> J[Add fine to total]
+    I --> J
+    J --> D
+    D -- No --> K[/Display records and total fine/]
+    K --> L([Stop])
+
+
 SOURCE CODE:
 ```python
 records = [
