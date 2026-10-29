@@ -34,6 +34,20 @@ FOR each route
 END FOR
 STOP
 ```
+            
+flowchart TD;(mermaid)
+    A([Start]) --> B[/Input route passenger demands/]
+    B --> C[Set bus capacity]
+    C --> D{More routes?}
+    D -- Yes --> E[Calculate buses required]
+    E --> F[Calculate available capacity]
+    F --> G[Calculate unserved passengers]
+    G --> H[/Display route details/]
+    H --> D
+    D -- No --> I[Calculate total buses]
+    I --> J[/Display total buses required/]
+    J --> K([Stop])
+
 
 SOURCE CODE:
 ```python
