@@ -1,17 +1,17 @@
 
 
-# 55. Tuple-Based Transaction Audit
+ 55. Tuple-Based Transaction Audit
 
-## Aim
+AIM:
 To process transaction tuples containing identifiers, amounts, and transaction types and detect duplicate identifiers, invalid amounts, and suspicious transaction sequences.
 
-## Objectives
+OBJECTIVES:
 - Process transaction data using tuples.
 - Detect duplicate transaction identifiers.
 - Identify invalid or negative transaction amounts.
 - Detect suspicious consecutive transaction patterns.
 
-## Algorithm
+ALGORITHM:
 1. Store transactions as tuples.
 2. Maintain a set of transaction identifiers.
 3. Check each identifier for duplication.
@@ -19,7 +19,7 @@ To process transaction tuples containing identifiers, amounts, and transaction t
 5. Examine consecutive transactions for suspicious patterns.
 6. Display all audit violations.
 
-## Pseudocode
+PSEUDO CODE:
 ```text
 START
 INPUT transaction tuples
@@ -44,7 +44,7 @@ END IF
 STOP
 ```
 
-## Source Code
+SOURCE CODE:
 ```python
 transactions = [
     ("T101", 500, "DEPOSIT"),
