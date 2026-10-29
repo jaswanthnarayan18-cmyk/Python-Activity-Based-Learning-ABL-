@@ -35,7 +35,17 @@ END FOR
 FIND maximum branch and category
 DISPLAY results
 STOP
-```
+``
+ 
+flowchart TD:(mermaid)
+    A([Start]) --> B[/Input expense matrix/]
+    B --> C[Calculate each branch total and average]
+    C --> D[Calculate category-wise totals]
+    D --> E[Find maximum branch expense]
+    E --> F[Find maximum category expense]
+    F --> G[/Display totals, averages and largest contributors/]
+    G --> H([Stop])
+
 
 SOURCE CODE:
 ```python
