@@ -34,6 +34,19 @@ END IF
 DISPLAY ranking
 STOP
 ```
+ 
+flowchart TD;(mermaid)
+    A([Start]) --> B[/Input prepared and served meals/]
+    B --> C[Calculate leftovers]
+    C --> D[Calculate wastage percentage]
+    D --> E{Waste percentage greater than 10%?}
+    E -- Yes --> F[Report limit exceeded]
+    E -- No --> G[Report acceptable waste]
+    F --> H{More days?}
+    G --> H
+    H -- Yes --> B
+    H -- No --> I([Stop])
+
 
 SOURCE CODE:
 ```python
