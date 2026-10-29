@@ -1,17 +1,17 @@
 
 
-# 56. Student Group Formation with Score Balancing
+56. Student Group Formation with Score Balancing
 
-## Aim
+AIM:
 To arrange students into groups of specified sizes while balancing their total scores and minimizing differences between group totals.
 
-## Objectives
+OBJECTIVES:
 - Store student names and scores.
 - Divide students into groups of a specified size.
 - Balance scores between groups.
 - Display group totals and score differences.
 
-## Algorithm
+ALGORITHM:
 1. Store students and their scores.
 2. Sort students according to their scores.
 3. Create empty groups.
@@ -19,7 +19,7 @@ To arrange students into groups of specified sizes while balancing their total s
 5. Continue until all students are allocated.
 6. Display group compositions and totals.
 
-## Pseudocode
+PSEUDO CODE:
 ```text
 START
 INPUT students and scores
@@ -37,7 +37,7 @@ DISPLAY groups and totals
 STOP
 ```
 
-## Source Code
+SOURCE CODE:
 ```python
 students = [
     ("Asha", 90),
