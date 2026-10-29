@@ -1,18 +1,18 @@
 
 
-# 58. Library Borrowing and Fine Reconciliation
+ 58. Library Borrowing and Fine Reconciliation
 
-## Aim
+AIM:
 To analyse library borrowing records, calculate fines for delayed returns, identify overdue books, and reconcile book availability.
 
-## Objectives
+OBJECTIVES:
 - Store book borrowing information using tuples.
 - Identify overdue books.
 - Calculate fines based on delay.
 - Determine which books are available and unavailable.
 - Generate a fine reconciliation report.
 
-## Algorithm
+ALGORITHM:
 1. Store book ID, borrowing period, and return delay.
 2. Define the permitted borrowing period.
 3. Calculate overdue days.
@@ -20,7 +20,7 @@ To analyse library borrowing records, calculate fines for delayed returns, ident
 5. Mark books with delays as overdue.
 6. Display total fines and book availability.
 
-## Pseudocode
+PSEUDO CODE:
 ```text
 START
 INPUT borrowing records
@@ -43,7 +43,7 @@ DISPLAY total fine
 STOP
 ```
 
-## Source Code
+SOURCE CODE:
 ```python
 records = [
     ("B101", 7, 0),
