@@ -36,6 +36,19 @@ END FOR
 DISPLAY groups and totals
 STOP
 ```
+    
+flowchart TD;(mermaid)
+    A([Start]) --> B[/Input students, scores and group size/]
+    B --> C[Sort students by score descending]
+    C --> D[Create empty groups and totals]
+    D --> E{More students?}
+    E -- Yes --> F[Find group with minimum total]
+    F --> G[Add student and update group total]
+    G --> E
+    E -- No --> H[Calculate score difference]
+    H --> I[/Display groups and totals/]
+    I --> J([Stop])
+
 
 SOURCE CODE:
 ```python
