@@ -1,8 +1,8 @@
-#57.smart canteen order and stock management
-## Aim
+57.smart canteen order and stock management
+AIM:
 To process customer orders, calculate bills, update inventory, reject unavailable quantities, and generate a summary of daily sales and remaining stock.
 
-## Objectives
+OBJECTIVES:
 - Maintain food item prices and stock.
 - Process successive customer orders.
 - Calculate customer bills.
@@ -10,7 +10,7 @@ To process customer orders, calculate bills, update inventory, reject unavailabl
 - Calculate total daily sales.
 - Display remaining inventory.
 
-## Algorithm
+ALGORITHM:
 1. Create an inventory containing item price and quantity.
 2. Read customer orders.
 3. Check whether the requested quantity is available.
@@ -19,7 +19,7 @@ To process customer orders, calculate bills, update inventory, reject unavailabl
 6. Add successful order values to daily sales.
 7. Display sales and remaining stock.
 
-## Pseudocode
+PSEUDO CODE:
 ```text
 START
 CREATE inventory
@@ -41,7 +41,7 @@ DISPLAY remaining stock
 STOP
 ```
 
-## Source Code
+SOURCE CODE:
 ```python
 inventory = {
     "Burger": {"price": 80, "stock": 10},
