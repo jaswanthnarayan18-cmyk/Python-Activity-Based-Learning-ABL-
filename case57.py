@@ -40,6 +40,23 @@ DISPLAY total sales
 DISPLAY remaining stock
 STOP
 ```
+               
+flowchart TD:(mermaid)
+    A([Start]) --> B[Initialize inventory and prices]
+    B --> C[/Input customer order/]
+    C --> D{Item exists?}
+    D -- No --> E[Reject unavailable item]
+    D -- Yes --> F{Sufficient stock?}
+    F -- No --> G[Reject insufficient stock]
+    F -- Yes --> H[Calculate bill]
+    H --> I[Update stock and total sales]
+    E --> J{More orders?}
+    G --> J
+    I --> J
+    J -- Yes --> C
+    J -- No --> K[/Display sales and remaining stock/]
+    K --> L([Stop])
+
 
 SOURCE CODE:
 ```python
