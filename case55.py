@@ -44,6 +44,25 @@ END IF
 STOP
 ```
 
+flowchart TD:(mermaid)
+    A([Start]) --> B[/Input transaction tuples/]
+    B --> C[Create empty ID set]
+    C --> D{More transactions?}
+    D -- Yes --> E[Read transaction ID and amount]
+    E --> F{ID already exists?}
+    F -- Yes --> G[Report duplicate ID]
+    F -- No --> H[Add ID to set]
+    G --> I{Amount less than or equal to zero?}
+    H --> I
+    I -- Yes --> J[Report invalid amount]
+    I -- No --> K[Check next transaction]
+    J --> K
+    K --> D
+    D -- No --> L[Check consecutive withdrawals]
+    L --> M[/Display audit findings/]
+    M --> N([Stop])
+
+
 SOURCE CODE:
 ```python
 transactions = [
