@@ -1,18 +1,18 @@
 
 
-# 59. Campus Transport Allocation
+59. Campus Transport Allocation
 
-## Aim
+AIM:
 To determine the number of buses required for different campus routes based on passenger demand and bus capacity and identify unserved passengers.
 
-## Objectives
+OBJECTIVES:
 - Store route-wise passenger demand.
 - Store bus capacities.
 - Calculate the number of buses required.
 - Determine total available capacity.
 - Identify unserved passengers.
 
-## Algorithm
+ALGORITHM:
 1. Store passenger demand for each route.
 2. Store the capacity of one bus.
 3. Calculate buses required using ceiling division.
@@ -20,7 +20,7 @@ To determine the number of buses required for different campus routes based on p
 5. Compare capacity with demand.
 6. Report unserved passengers if any.
 
-## Pseudocode
+PSEUDO CODE:
 ```text
 START
 INPUT route demands
@@ -35,7 +35,7 @@ END FOR
 STOP
 ```
 
-## Source Code
+SOURCE CODE:
 ```python
 routes = {
     "Route A": 95,
