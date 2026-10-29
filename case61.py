@@ -62,6 +62,32 @@ IF no errors exist
     DISPLAY "Seating arrangement is valid"
 ELSE
     DISPLAY "Seating arrangement contains errors"
+ 
+flowchart TD:mermaid
+    A([Start]) --> B[/Input seating matrix and valid roll numbers/]
+    B --> C[Define reserved positions]
+    C --> D[Initialize error lists and seen set]
+    D --> E{More seats?}
+    E -- Yes --> F[Read seat position and roll number]
+    F --> G{Seat empty?}
+    G -- Yes --> H[Record empty seat]
+    G -- No --> I{Position reserved?}
+    I -- Yes --> J[Record reserved violation]
+    I -- No --> K{Roll number valid?}
+    K -- No --> L[Record invalid allocation]
+    K -- Yes --> M{Roll number already seen?}
+    M -- Yes --> N[Record duplicate]
+    M -- No --> O[Add roll number to seen set]
+    H --> P[Move to next seat]
+    J --> P
+    L --> P
+    N --> P
+    O --> P
+    P --> E
+    E -- No --> Q[Count validation errors]
+    Q --> R[/Display validation report/]
+    R --> S([Stop])
+
 
 SOURCE CODE:
 ```python
