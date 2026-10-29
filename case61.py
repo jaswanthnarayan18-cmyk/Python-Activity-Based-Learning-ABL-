@@ -1,9 +1,10 @@
 
-# 61. Nested List Examination Seating Validation
-## Aim
+ 61. Nested List Examination Seating Validation 
+AIM:
 To validate a complete examination seating matrix by detecting duplicate roll numbers, reserved positions, empty seats, and invalid student allocations.
 
-## Objectives
+
+OBJECTIVES:
 - Validate the examination seating matrix.
 - Detect duplicate roll numbers.
 - Identify reserved seats that are incorrectly occupied.
@@ -11,7 +12,7 @@ To validate a complete examination seating matrix by detecting duplicate roll nu
 - Detect invalid student roll numbers.
 - Generate a complete seating validation report.
 
-## Algorithm
+ALGORITHM:
 1. Create the examination seating matrix.
 2. Define the valid roll-number range.
 3. Define reserved seat positions.
@@ -23,7 +24,7 @@ To validate a complete examination seating matrix by detecting duplicate roll nu
 9. Report duplicate roll numbers.
 10. Display the validation results.
 
-## Pseudocode
+PSEUDO CODE:
 START
 INPUT seating matrix
 INPUT valid roll number range
@@ -62,7 +63,7 @@ IF no errors exist
 ELSE
     DISPLAY "Seating arrangement contains errors"
 
-## Source Code
+SOURCE CODE:
 ```python
 seating = [
     [101, 102, 103, 104],
