@@ -41,6 +41,21 @@ DISPLAY quality report
 STOP
 ```
 
+flowchart TD;(mermaid)
+    A([Start]) --> B[/Input production and defect matrices/]
+    B --> C[Set defect threshold]
+    C --> D{More products or batches?}
+    D -- Yes --> E[Calculate defect percentage]
+    E --> F{Percentage greater than threshold?}
+    F -- Yes --> G[Mark quality violation]
+    F -- No --> H[Mark acceptable]
+    G --> I[Process next batch]
+    H --> I
+    I --> D
+    D -- No --> J[/Display quality report/]
+    J --> K([Stop])
+
+
 SOURCE CODE:
 ```python
 products = ["Product A", "Product B", "Product C"]
