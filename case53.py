@@ -1,24 +1,24 @@
 
 
-# 53. Food Waste Monitoring System
+ 53. Food Waste Monitoring System
 
-## Aim
+ AIM:
 To compare prepared meals, meals served, and leftovers over several days, calculate wastage percentages, and identify days exceeding the acceptable waste limit.
 
-## Objectives
+OBJECTIVES:
 - Record daily food preparation and consumption.
 - Calculate leftover quantities.
 - Calculate food wastage percentages.
 - Identify days where wastage exceeds the permitted limit.
 
-## Algorithm
+ALGORITM:
 1. Store prepared and served meals for each day.
 2. Calculate leftovers as prepared minus served.
 3. Calculate wastage percentage.
 4. Compare the percentage with the acceptable limit.
 5. Display days exceeding the limit.
 
-## Pseudocode
+PSEUDO CODE:
 ```text
 START
 INPUT daily food data
@@ -32,7 +32,7 @@ END FOR
 STOP
 ```
 
-## Source Code
+SOURCE CODE:
 ```python
 food_data = [
     ("Monday", 500, 450),
