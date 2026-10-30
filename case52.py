@@ -1,6 +1,6 @@
 52. Hackathon Team Formation and Ranking
 
- Aim
+ Problem Statement:
 To analyse student scores and team compositions, validate team sizes, calculate aggregate round-wise scores, and resolve tied rankings using predefined rules.
 
  OBJECTIVES:
