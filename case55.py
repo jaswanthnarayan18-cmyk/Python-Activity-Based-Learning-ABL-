@@ -43,8 +43,8 @@ IF suspicious sequence found
 END IF
 STOP
 ```
-
-flowchart TD:(mermaid)
+---mermaid
+flowchart TD 
     A([Start]) --> B[/Input transaction tuples/]
     B --> C[Create empty ID set]
     C --> D{More transactions?}
@@ -61,6 +61,7 @@ flowchart TD:(mermaid)
     D -- No --> L[Check consecutive withdrawals]
     L --> M[/Display audit findings/]
     M --> N([Stop])
+---
 
 
 SOURCE CODE:
