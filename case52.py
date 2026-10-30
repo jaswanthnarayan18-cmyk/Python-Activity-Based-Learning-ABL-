@@ -34,6 +34,26 @@ END IF
 DISPLAY ranking
 STOP
 ```
+ 
+flowchart TD
+    A([START]) --> B[/Input team names, members and round-wise scores/]
+    B --> C[Set required team size]
+    C --> D{Is team size valid?}
+    D -- No --> E[Display invalid team size]
+    D -- Yes --> F[Calculate total round-wise score]
+    F --> G[Find highest individual score]
+    G --> H[Store valid team details]
+    E --> I{Are more teams available?}
+    H --> I
+    I -- Yes --> B
+    I -- No --> J[Sort teams by total score in descending order]
+    J --> K{Are total scores tied?}
+    K -- Yes --> L[Compare highest individual scores]
+    K -- No --> M[Assign team rankings]
+    L --> M
+    M --> N[/Display final team ranking and scores/]
+    N --> O([STOP])
+
 
 
 SOURCE CODE:
